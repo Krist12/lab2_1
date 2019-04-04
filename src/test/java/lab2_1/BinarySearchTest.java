@@ -1,7 +1,9 @@
 package lab2_1;
 
-import static org.junit.Assert.*;
+import edu.iis.mto.bsearch.BinarySearch;
+import edu.iis.mto.bsearch.SearchResult;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 
@@ -9,7 +11,13 @@ public class BinarySearchTest {
 
     @Test
     public void test() {
-        fail("Not yet implemented");
+        int[] seq = {1};
+        int key = 2;
+        
+        SearchResult result = BinarySearch.search(key, seq);
+        Assert.assertEquals(true,result.isFound());
+        
+
     }
 
 }
